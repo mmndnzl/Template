@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <head></head>
 <title></title>
@@ -228,4 +229,341 @@
     
    </div>
 </body>
+=======
+<html>
+<head></head>
+<title></title>
+<meta charset="utf-8"></meta>
+<link rel="stylesheet" href="plugins/css/seco/css.css">
+<script src="plugins/js/jquery-2.2.3.js"></script>
+<script src="plugins/js/script.js"></script>
+
+<body>
+   <div class="wrapper">
+   <div class="ust" data-top="-43">
+        <div class="resim-sag">
+           
+        </div>
+        <div class="logo">
+            <img src="content/images/logo.png" alt="mumun">
+        </div>
+        <div class="resim-sol">
+            
+        </div>
+        
+        <div class="nav-container">
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a>Anasayfa</a>
+                            </li>
+                        <li>
+                           <a> Portfolio</a>
+                            </li>
+                        <li>
+                            <a>Hizmetlerimiz</a>
+                        </li>
+                        <li>
+                            <a>
+                                Hakkımızda
+                                </a>
+                            </li>
+                        <li><a>
+                            
+                                İletişim                            
+                        </a>
+                        </li>
+                         <li><a>
+                            
+                              seco                          
+                        </a>
+                        </li>
+                    </ul>
+                 
+                </div>
+        </div>
+        
+    </div>
+    <div class="container">
+         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+    <style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>
+
+
+    <div id="jssor_1" style="margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/red.jpg" />
+                <div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #ffffff; line-height: 60px;">TOUCH SWIPE SLIDER</div>
+                <div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+                <div data-u="caption" data-t="0" style="position: absolute; top: 100px; left: 600px; width: 445px; height: 300px;">
+                    <img src="img/c-phone.png" style="position: absolute; top: 0px; left: 0px; width: 445px; height: 300px;" />
+                    <img src="img/c-jssor-slider.png" data-u="caption" data-t="1" style="position: absolute; top: 70px; left: 130px; width: 102px; height: 78px;" />
+                    <img src="img/c-text.png" data-u="caption" data-t="2" style="position: absolute; top: 153px; left: 163px; width: 80px; height: 53px;" />
+                    <img src="img/c-fruit.png" data-u="caption" data-t="3" style="position: absolute; top: 60px; left: 220px; width: 140px; height: 90px;" />
+                    <img src="img/c-navigator.png" data-u="caption" data-t="4" style="position: absolute; top: -123px; left: 121px; width: 200px; height: 155px;" />
+                </div>
+                <div data-u="caption" data-t="5" style="position: absolute; top: 120px; left: 650px; width: 470px; height: 220px;">
+                    <img src="img/c-phone-horizontal.png" style="position: absolute; top: 0px; left: 0px; width: 470px; height: 220px;" />
+                    <div style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px; overflow: hidden;">
+                        <img src="img/c-slide-1.jpg" data-u="caption" data-t="6" style="position: absolute; top: 0px; left: 0px; width: 379px; height: 213px;" />
+                        <img src="img/c-slide-3.jpg" data-u="caption" data-t="7" style="position: absolute; top: 0px; left: 379px; width: 379px; height: 213px;" />
+                    </div>
+                    <img src="img/c-navigator-horizontal.png" style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px;" />
+                    <img src="img/c-finger-pointing.png" data-u="caption" data-t="8" style="position: absolute; top: 740px; left: 1600px; width: 257px; height: 300px;" />
+                </div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/purple.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/blue.jpg" />
+            </div>
+            <a data-u="ad" href="http://www.jssor.com" style="display:none">jQuery Slider</a>
+        
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+        <div class="protfolio-container">
+            <div class="item">
+                <div class="baslik">
+                    <h3>Seco</h3>
+                </div>
+                <div class="protfolio-content">
+                    
+                </div>
+            </div>
+            
+               <div class="item">
+               <div class="baslik">
+                    <h3>Seco</h3>
+                </div>
+                <div class="protfolio-content">
+                    
+                </div>
+            </div>
+               <div class="item">
+               <div class="baslik">
+                    <h3>Seco</h3>
+                </div>
+                <div class="protfolio-content">
+                    
+                </div>
+            </div>
+               <div class="item">
+               <div class="baslik">
+                    <h3>Seco</h3>
+                </div>
+                <div class="protfolio-content">
+                    
+                </div>
+            </div>
+               
+        
+       <p>
+           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quia doloribus ad nemo asperiores iure saepe facilis veniam, aspernatur libero, repudiandae autem qui harum soluta totam modi. Doloribus, culpa, quisquam!</span>
+           <span>Eligendi consequatur ipsam, hic quis possimus earum vero ratione praesentium natus molestiae, facilis ex nam, minus autem quasi laboriosam. Placeat tempora dicta explicabo vero, non officiis ipsum tenetur voluptas sed.</span>
+           <span>Eveniet quos recusandae voluptatum tempore, totam magni consequatur qui nam veritatis eos facilis libero error praesentium, hic possimus reiciendis dignissimos voluptatem doloremque sequi commodi, ullam incidunt veniam? Voluptate, accusantium, cumque.</span>
+           <span>Officiis quae asperiores harum, expedita eos architecto molestias, similique laboriosam eius perspiciatis nostrum sit facilis. Facilis, sapiente. Saepe dolores nam aut sapiente. Minima molestiae excepturi harum odio neque ratione sequi.</span>
+           <span>Dolorem eligendi ad beatae obcaecati veritatis nihil natus, aut adipisci sequi, consectetur tenetur dicta, sunt similique ipsa in, corporis eius hic rerum assumenda enim labore. Aspernatur quia eligendi reiciendis blanditiis.</span>
+            <span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus in hic tenetur vel quaerat, ad voluptatem magni eius amet ex, explicabo ipsa nulla cupiditate mollitia veniam recusandae quia nemo.</span>
+                <span>Dignissimos exercitationem, assumenda doloremque aperiam ipsam fugit quae maiores, nisi ullam iusto, hic quasi autem doloribus expedita suscipit sapiente labore? Dolor, corporis. Saepe, beatae quis, reiciendis voluptatibus non laudantium sint!</span>
+                <span>Odit esse ex magnam animi velit deleniti voluptates illum quibusdam vero ad officiis, quas adipisci aperiam earum, corporis veritatis veniam. Expedita aperiam minus possimus cupiditate asperiores provident, voluptatem facilis deserunt.</span>
+                <span>Quas ab nesciunt libero perferendis illo sed adipisci explicabo molestias, temporibus, pariatur alias ea cum. Dignissimos ipsam repudiandae tenetur laudantium ullam minus harum, esse soluta excepturi temporibus consectetur, vel delectus.</span>
+                <span>Minus laudantium deserunt sequi provident illum odio totam dignissimos eveniet error nemo amet, iusto incidunt ipsum mollitia nesciunt voluptate voluptates quibusdam veritatis autem libero hic. Temporibus repellendus provident cumque debitis.</span>
+                <span>Ipsam omnis illum qui iusto mollitia, ipsum quis eveniet modi eligendi molestias obcaecati non, expedita velit veniam eum natus itaque enim fuga vel dolorum eaque! Unde minima eaque maiores nisi!</span>
+                <span>Nulla maiores similique quod eius debitis officia, omnis atque provident aliquid in beatae dicta mollitia. Aspernatur, itaque consectetur minima rerum expedita beatae reiciendis asperiores! Labore inventore non cum suscipit delectus.</span>
+                <span>Pariatur unde consequuntur, nostrum excepturi sint vel at libero, minus doloremque architecto itaque, a ullam. Numquam placeat quia, laudantium possimus, recusandae enim illo quidem nesciunt quae culpa. Eveniet, consectetur vitae.</span>
+                <span>Quas expedita, error itaque. Tempora itaque, repellendus atque ea obcaecati debitis quidem quibusdam hic doloremque consequatur officia fugit, voluptate eaque id doloribus fugiat ut recusandae perspiciatis numquam ipsum non placeat!</span>
+                <span>Quos, fuga? Dolor quia nobis quasi fugiat voluptatum accusantium voluptatem, sit recusandae amet quis porro. Quasi at, dignissimos accusantium mollitia deserunt, cupiditate tenetur, natus laudantium est laboriosam sit quis magni.</span>
+                <span>Aliquid eaque perspiciatis magnam similique fugit rem tenetur omnis neque atque est expedita numquam vel iure iusto vero iste distinctio laudantium voluptatibus, temporibus voluptates libero tempora! Ea nostrum porro quas.</span>
+                <span>Veritatis quam dignissimos repudiandae accusantium voluptates a, consequatur ipsam in impedit, sed! Asperiores dolorum fuga beatae minima itaque, ab, soluta ut, nesciunt harum quis temporibus fugit. Esse, rem asperiores labore!</span>
+                <span>Minima provident aut error iusto inventore nulla saepe, laudantium iure maxime at sint fugit consequatur alias, accusamus quaerat voluptates optio commodi quisquam cum ea sed placeat est. Debitis magni, omnis.</span>
+                <span>Aliquid incidunt odit expedita deserunt consequatur molestias amet necessitatibus nobis aperiam nesciunt maxime eum sint quos veritatis rem fuga illum ipsum totam facere corrupti, vero iste dicta ullam reprehenderit! Recusandae.</span>
+                <span>Eius sit, illo dolor obcaecati reprehenderit, facere corrupti modi a magnam. Quos, magni asperiores commodi praesentium, doloremque odio atque quod dicta laudantium accusantium reprehenderit soluta quia, illum vel cumque obcaecati.</span>
+            </span>
+            
+       </p>
+       <p>
+           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi iure hic obcaecati suscipit quo ipsa distinctio accusamus eum dolore numquam, voluptates in sequi doloremque culpa nam, fugit assumenda vero nobis!</span>
+           <span>Nulla debitis maiores sint commodi sequi accusantium laborum mollitia, alias sit cum et ipsam illum deserunt fugiat possimus, ex, doloremque eaque minus libero tempore repellendus labore, reprehenderit. Dicta, tempora, maiores.</span>
+           <span>Blanditiis similique obcaecati expedita laboriosam voluptates asperiores at consequuntur ea labore suscipit, eligendi id nisi ab, porro ut, sunt itaque fugit maxime doloremque, est eos consequatur distinctio. Vitae, necessitatibus, laboriosam!</span>
+           <span>Quo aspernatur quam dicta temporibus nam repellat, harum asperiores, dignissimos eum perspiciatis eligendi eius doloribus natus deleniti optio similique necessitatibus exercitationem porro laboriosam vero nesciunt nobis iure sequi! Iusto, vitae!</span>
+           <span>Rerum ad ipsa sequi ullam consequatur vel quidem quae itaque, excepturi consequuntur facilis dicta praesentium nam iusto beatae, possimus sit repellendus qui laboriosam? Molestiae nisi, rerum! Quibusdam, blanditiis dolor fuga.</span>
+           <span>Maiores animi laudantium, temporibus incidunt quae explicabo ea voluptatibus quibusdam aperiam officia, tempore eaque sapiente excepturi suscipit quidem. Recusandae dolorem labore placeat at sunt, quisquam dolor repellendus aperiam magni doloremque.</span>
+           <span>Dolores, vitae, tenetur. Iusto maiores fugit excepturi ratione pariatur eaque, optio voluptatum ex deserunt impedit neque culpa, adipisci praesentium animi eligendi. Illo expedita quis facilis fuga veritatis voluptates voluptatem aut!</span>
+           <span>Modi adipisci aspernatur consequuntur, officiis aperiam vero amet quasi ex deserunt, nulla minima deleniti harum. Voluptates optio consequuntur culpa eaque aliquid natus eligendi, nostrum est minus id illum laborum cum.</span>
+           <span>Laboriosam voluptatum iste dolores similique quibusdam aliquid provident nobis, consequatur eaque, ratione cupiditate doloremque, quia amet veniam error, fuga ducimus nisi velit inventore. Aperiam magnam nihil, ipsam aliquam reiciendis quas?</span>
+           <span>Debitis ut fugiat ex molestias sequi excepturi nulla vitae ducimus iure minus dicta sed accusantium illo reiciendis consectetur, ea omnis vero eligendi eveniet mollitia porro, quas incidunt rerum dolorem laudantium!</span>
+           <span>Illum fuga nulla fugiat architecto id necessitatibus molestias facilis provident, porro ut. At commodi quasi sint, aperiam perspiciatis provident ipsa quibusdam veniam eius, non, excepturi enim, placeat ad deserunt earum?</span>
+           <span>Fugiat ab qui repellat illum consequuntur reiciendis vitae eos sed accusantium unde. Dignissimos sunt, rem repudiandae ipsa possimus accusamus doloremque repellendus. Impedit ratione mollitia vel exercitationem enim animi magnam debitis!</span>
+           <span>Optio corporis ullam magnam labore ipsa inventore dolorem atque, voluptatibus maxime nostrum quos modi repellendus eos hic numquam natus assumenda provident blanditiis vero voluptas, quibusdam, consequatur ab. Libero quae, doloribus?</span>
+           <span>Sapiente laborum distinctio alias dicta, assumenda dolore delectus minus eos earum. Hic officiis, vel veritatis voluptas ab, eum et molestiae similique dolorem amet esse impedit eaque harum magni beatae voluptatibus!</span>
+           <span>Porro perspiciatis consequatur beatae voluptates accusantium dolore libero distinctio! Dolorum, delectus, autem? Illo iste cumque cupiditate quos laborum eius commodi. Modi harum aliquam nostrum iste error sequi commodi, sed beatae?</span>
+           <span>Harum fugit similique, iste eius illum ab. Alias beatae, repellat magni minus repellendus, esse eos labore ab laboriosam voluptatem quas. Ratione ex nesciunt maxime amet, fugiat, voluptate et quibusdam harum.</span>
+           <span>Eos architecto facilis aliquid vitae repellendus minus sit optio modi ratione ex vero nostrum, quia nihil doloremque consectetur. Perferendis minus consectetur nobis velit quibusdam. Sapiente eveniet recusandae ad, totam voluptate.</span>
+           <span>Beatae veniam at, quo magni doloremque illo sint tempore laudantium aperiam eaque mollitia vel voluptatum sapiente facere iure sed, voluptatibus ad assumenda sequi exercitationem esse? Id eaque, nisi eos architecto?</span>
+           <span>Aliquam natus sequi numquam aut ratione dignissimos at harum, officia consectetur corporis. Dicta enim itaque soluta ullam nisi nobis minima veniam repudiandae, id, nostrum expedita placeat et, pariatur assumenda. Officia!</span>
+           <span>Fugiat dolorem ipsa a molestiae accusamus eos praesentium recusandae soluta impedit, veniam, officia veritatis pariatur maxime sunt perferendis repellendus sapiente minus laboriosam deleniti necessitatibus. Vitae amet similique repellendus id necessitatibus?</span>
+           <span>Quidem fugit cumque aperiam atque sint earum delectus maiores sit eos, iste nisi illum consectetur animi ducimus, aliquam, nam nostrum illo omnis exercitationem accusantium. Eum fugit architecto deserunt labore amet.</span>
+           <span>Veritatis facilis, ipsam itaque quos error sint autem laboriosam maiores ex et dolore eveniet est laborum cupiditate possimus dicta perspiciatis, placeat quae aliquid expedita earum. Velit cumque incidunt amet dolorum.</span>
+           <span>Ut nisi autem quod voluptatem nihil fugit officia reprehenderit amet eius mollitia repellat voluptatibus nobis, ad, minima quae, et illo. Repellendus incidunt vero harum sed facere quos qui possimus porro.</span>
+           <span>Placeat vitae, quidem in enim reprehenderit earum, accusamus a excepturi aspernatur odit impedit voluptatem eligendi aperiam? Veritatis odit totam nobis, iste ipsa rem minus unde quos rerum. Officiis, sunt, nostrum!</span>
+           <span>Vel quia eius explicabo, mollitia expedita consectetur error dolore! Praesentium odit eveniet omnis quisquam ipsam enim natus vitae repudiandae illo assumenda vero dignissimos, incidunt, rem minima voluptatibus, animi voluptatem harum!</span>
+           <span>Facere recusandae cum assumenda, mollitia consequatur alias libero odio architecto quo excepturi minima optio nam labore quibusdam eum, perspiciatis tenetur eius perferendis atque dolorum! Est ipsa nisi asperiores, facere accusamus.</span>
+           <span>Unde, officiis, cum. Sunt minus tempore quia consequuntur, id quod qui, error culpa dolore natus similique obcaecati, quam cupiditate a, consequatur pariatur necessitatibus excepturi odit omnis incidunt. Modi, nobis, similique.</span>
+           <span>Officiis magnam tempore facilis vitae neque reprehenderit aliquam recusandae illo quisquam ad nam, aliquid fugit, odio incidunt modi beatae culpa totam vero asperiores? Dicta labore aspernatur eos quos, neque numquam!</span>
+           <span>Pariatur itaque minus deleniti eligendi, voluptatem, aperiam totam labore non accusamus nisi qui incidunt quod iste soluta magnam unde. Atque nisi sed dolorum aspernatur totam eveniet. Quam dolorum facilis nostrum.</span>
+           <span>Omnis neque cumque debitis voluptatem aliquid, iusto corrupti, sequi magnam dignissimos vero labore quos asperiores ipsum repudiandae nostrum commodi accusantium ut sapiente sunt quo dolore officiis. Obcaecati quidem nostrum adipisci!</span>
+           <span>Dolor natus obcaecati voluptatibus illo aperiam. Deserunt rem expedita pariatur id omnis numquam modi in odit sint a reprehenderit consectetur blanditiis, adipisci ea voluptas excepturi quaerat itaque ipsum aperiam tempora!</span>
+           <span>Incidunt ipsam impedit aspernatur sed ipsa, ea voluptatum dolore sint optio. Quam rem nostrum quia, dicta saepe unde distinctio. Nesciunt asperiores nihil in delectus totam cumque deleniti maxime vitae placeat.</span>
+           <span>Quaerat dignissimos optio impedit in, sapiente quis voluptatibus sequi commodi minima tenetur vitae similique consequuntur iure odit corporis blanditiis repellat beatae! Inventore, officiis. Eveniet similique, totam blanditiis ratione. Pariatur, ut.</span>
+           <span>Nihil, saepe, soluta. Recusandae placeat facere esse dolor magni voluptate quae vero ab eaque harum assumenda id et consequuntur ad non, praesentium, expedita maxime architecto earum velit, nostrum dolores laudantium.</span>
+           <span>Odio cupiditate maiores eius perspiciatis, saepe, deserunt eligendi corrupti quo rerum aliquid nostrum itaque assumenda. Ipsa facilis dolores, aperiam magni aliquid, suscipit aut earum! Fugiat aliquid numquam in, perspiciatis quisquam!</span>
+           <span>Quae fuga doloremque accusamus, incidunt, non cum dolor dicta neque sint quos laboriosam ut rem, minima cumque? Aliquid asperiores delectus nesciunt voluptatibus inventore, rerum quibusdam omnis molestias beatae suscipit, perspiciatis!</span>
+           <span>Quisquam, modi vitae ipsum consequuntur qui delectus sequi quidem deserunt ut beatae minus, sint numquam quibusdam maxime, ipsa sed deleniti dolore molestias. Inventore quaerat assumenda, doloribus consectetur quibusdam error aspernatur.</span>
+           <span>Quas incidunt eius deserunt optio. Maxime possimus pariatur quod sapiente illo libero! Eveniet commodi, cumque rem ab magnam dicta iure, temporibus, perspiciatis suscipit, assumenda qui? Quae blanditiis quia sed iste.</span>
+           <span>Ipsa, ad quis dolorem, fuga veritatis necessitatibus debitis sed officia, voluptates ea iste nulla sapiente. Esse voluptas, ea dolor ex eum quod atque officia quisquam non, voluptatem iusto minima itaque.</span>
+           <span>Voluptates illum, quibusdam labore! Tempore culpa aperiam cupiditate corporis illo in molestiae possimus, distinctio perferendis optio vitae ad architecto aut, voluptates eos quis doloribus laboriosam iusto? Assumenda enim, cupiditate repellat!</span>
+           <span>Eius dolorum, veniam magnam ut officiis ducimus quaerat consequatur, nobis minima excepturi. Aliquam earum molestiae, quidem illo quas reiciendis nulla, odio accusantium voluptas omnis distinctio. Delectus quos nesciunt quasi, adipisci.</span>
+           <span>Velit magnam, voluptas nostrum adipisci tempore aut inventore debitis quasi ab necessitatibus officiis voluptatem esse pariatur rem iusto voluptates officia quia? Accusamus facilis enim eum neque, labore necessitatibus ab voluptas.</span>
+           <span>Atque perspiciatis debitis dicta odio, libero quas officiis quo veritatis ipsa incidunt adipisci minima odit. Voluptas iusto, minus delectus odio minima obcaecati blanditiis dolorem. Porro a molestias corporis delectus, fuga!</span>
+           <span>Magnam totam quod laboriosam consequatur, dolorem doloribus esse tempore et aspernatur aliquam. Nam facere et, consectetur, accusantium, dolores magnam iste cupiditate laboriosam veritatis illum quidem quo, sint ad? Id, ex.</span>
+           <span>Maiores unde laborum eum libero consectetur ipsum, commodi nesciunt natus harum, deserunt explicabo ipsa sequi, voluptates, omnis eveniet eligendi odit aperiam. Commodi, numquam, quis! Rem, debitis commodi quos molestias ex?</span>
+       </p>
+        </div>
+      
+        
+    </div>
+    <div class="alt" data-top="-39">
+        <div class="resim-sag">
+            
+        </div>
+        <div class="resim-sol">
+            
+        </div>
+    </div>
+    
+   </div>
+</body>
+>>>>>>> origin/master
 </html>
