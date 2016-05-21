@@ -29,13 +29,6 @@ body{
     background-color: #16BEAF;
     z-index:2;
 }
-.slide{
-	position: relative;
-    top: -110px;
-    width: 100%;
-    height: 250px;
-	background-color: red;
-}
 .alt{
     position: absolute;
     bottom: -2px;
@@ -136,8 +129,8 @@ top: -81px;
    padding-left:2.5%;
    padding-right:2.5%;
    padding-bottom: 163px;
+   overflow-x: hidden;
 }
-
 .nav-container{
     position: absolute;
     bottom: -4px;
@@ -168,7 +161,7 @@ top: -81px;
     /* top: 22%; */
     /* text-align: center; */
     font-size: 1.3em;
-	font-family: Source Sans Pro;
+    font-family: fantasy;
     text-decoration: none;
     width: inherit;
     padding: 15px;
@@ -181,6 +174,7 @@ top: -81px;
 
 
 .nav ul li:nth-child(3){
+    bottom: -57px;
     left: -166px;
     width: 208px;
     margin-left: -3px;
@@ -189,7 +183,7 @@ top: -81px;
 .nav ul li:nth-child(6){
     position: relative;
     right: -770px;
-    bottom: 32px;
+    bottom: -32px;
     width: 208px;
     margin-left: -3px;
     /* background-color: white; */
@@ -210,15 +204,15 @@ top: -81px;
 .protfolio-container .item{
     /* position: relative; */
     display: inline-block;
-    width: 336px;
+    width: 236px;
     background-color: #FFFFFF;
     height: 187px;
-    max-width: 336px;
-    min-width: 336px;
+    max-width: 236px;
+    min-width: 236px;
     /* top: 16px; */
     /* left: 5px; */
-    border-radius: 4px;
-    border: 0.1px solid #e5e5e5;
+    border-radius: 7px;
+    border: 0.5px solid #C6C6C6;
     margin-left: 4.4%;
     padding-bottom: 27px;
     padding-left: 4px;
@@ -233,30 +227,21 @@ top: -81px;
     /* position: absolute; */
 }
 .item .baslik{
-   
-background: #e72922; /* Old browsers */
-background: -moz-linear-gradient(top,  #e72922 1%, #a9201c 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #e72922 1%,#a9201c 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #e72922 1%,#a9201c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e72922', endColorstr='#a9201c',GradientType=0 ); /* IE6-9 */
-
+    background-color: #DD0000;
+    color: white;
     /* position: absolute; */
-    width: 200px;
+    width: 166px;
     position: relative;
     padding: 7px;
-   /* border: 1px solid #C6C6C6;*/
+    border: 1px solid #C6C6C6;
     top: -20px;
-    border-radius: 4px;
+    border-radius: 7px;
+    font-weight: bolder;
     cursor: default;
     margin: 0 auto;
     text-align: center;
-	color:white;
-	font-size: 1.3em;
-	font-family: Source Sans Pro;
 }
-.h3{
-	font: 20px Source Sans Pro;
-}
+
 .item .protfolio-content{
     width: 100%;
     height: 90%;
